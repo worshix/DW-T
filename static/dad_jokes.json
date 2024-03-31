@@ -1,0 +1,84 @@
+{
+    "dad_jokes":[
+        {
+            "id":"dj1",
+            "dad":"I'm afraid for the calendar.",
+            "joke":"Its days are numbered."
+        },
+        {
+            "id":"dj2",
+            "dad":"My wife said I should do lunges to stay in shape",
+            "joke":"That would be a big step forward."
+        },
+        {
+            "id":"dj3",
+            "dad":"Why do fathers take an extra pair of socks when they go golfing?",
+            "joke":"In case they get a hole in one!"
+        },
+        {
+            "id":"dj4",
+            "dad":"Singing in the shower is fun until you get soap in your mouth.",
+            "joke":"Then it's a soap opera."
+        },
+        {
+            "id":"dj5",
+            "dad":"What do a tick and the Eiffel Tower have in common?",
+            "joke":"They're both Paris sites."
+        },
+        {
+            "id":"dj6",
+            "dad":"What do you call a fish wearing a bowtie?",
+            "joke":"Sofishticated"
+        },
+        {
+            "id":"dj7",
+            "dad":"How do you follow Will Smith in the snow?",
+            "joke":"You follow the fresh prints."
+        },
+        {
+            "id":"dj8",
+            "dad":"I thought the dryer was shrinking my clothes.",
+            "joke":"Turns out it was the refrigerator all along."
+        },
+        {
+            "id":"dj9",
+            "dad":"What do you call a factory that makes okay products?",
+            "joke":"Satisfactory"
+        },
+        {
+            "id":"dj10",
+            "dad":"Dear Math,",
+            "joke":"grow up and solve your own problems."
+        },
+        {
+            "id":"dj11",
+            "dad":"What did the janitor say when he jumped out of the closet?",
+            "joke":"Supplies!!!"
+        },
+        {
+            "id":"dj12",
+            "dad":"What did the ocean say to the beach?",
+            "joke":"Nothing, it just waved."
+        },
+        {
+            "id":"dj13",
+            "dad":"Why do seagulls fly over the ocean?",
+            "joke":"Because if they flew over the bay, we'd call them bagels."
+        },
+        {
+            "id":"dj14",
+            "dad":"I only know 25 letters of the alphabet.",
+            "joke":"I don't know 'y'"
+        },
+        {
+            "id":"dj15",
+            "dad":"How does the moon cut his hair?",
+            "joke":"Eclipse it."
+        },
+        {
+            "id":"dj16",
+            "dad":"What did one wall say to the other?",
+            "joke":"I'll meet you at the corner."
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<!-- template for all pages, it contains navbar and sidebar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DW!Tmedia</title>
+    <link rel="stylesheet" href="./../static/navbar.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="../static/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="../static/images/dwtLogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href={{url_for('static', filename=css)}}>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <a href="/" class="nav-item"><img src="../static/images/dwtLogo.svg" style="width: 40px; position: relative; top: 10px; left: 5px; color: white; margin: 0; padding: 0;"/>DW!T<em>media</em></a>
+        <a href="/graphic_design" class="nav-item hide-on-mobile">Graphic Design</a>
+        <a href="/content_creation" class="nav-item hide-on-mobile">Content Creation</a>
+        <a href="/web_design" class="nav-item hide-on-mobile">Web Design</a>
+        <a href="/about_us" class="nav-item">About Us</a>
+        <a href="#" class="nav-item bi bi-menu-button-wide-fill" onclick="showSidebar('sidebar')"></a>
+    </nav>
+    <nav class="sidebar" id="sidebar">
+        <a href="#" class="bi bi-arrow-right" onclick="hideSidebar('sidebar')"></a>
+        <a href="/graphic_design" class="side-item">Graphic Design</a>
+        <a href="/content_creation" class="side-item">Content Creation</a>
+        <a href="/web_design" class="side-item">Web Design</a>    
+    </nav>
+    {% block body %}
+    {% endblock body %}
+    <script src="./../static/navbar.js"></script>
+    <script src={{url_for('static', filename=script)}}></script>
+</body>
+</html>

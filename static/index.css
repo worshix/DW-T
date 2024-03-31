@@ -1,0 +1,201 @@
+body{
+    --col1: #107d91;
+    --col2: #6d6d6d;
+    --col3: #08d6fa;
+    --w1:var(--col2);
+    --w2:#684BFE;
+    --w3:#107D91;
+    --w4:#CD5DFB;
+    --w5:#0095D5;
+    --service-item: 300px;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+    .line{
+    text-align: center;
+    text-transform: uppercase;letter-spacing: 0.5em;
+    color: var(--col1);
+    display: block;
+    border-width: 4px 0;
+    font: 1000 2.5em/1 ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+    background:url(./images/text.JPG) repeat-x;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text_anim 50s linear infinite;
+}
+.punch{
+    font: 1000 2.5em/1 "Neuton";
+    position: relative;
+}
+.punch i{
+    font-style: normal;
+    position: relative;
+    transition:left ease-in-out 1s;
+    background:url(./images/text.JPG) repeat-x;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@-webkit-keyframes text_anim{
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+       background-position: 100% 50%;
+    }    
+}
+.all_services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.service-item{
+    width: var(--service-item);
+    margin: 20px;
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+}
+.image{
+    display: block;
+    height: var(--service-item);
+}
+.image img{
+    display: block;
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+.service-item ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+}
+
+.service-item ul li{
+    margin: 10px;
+    &:first-child{
+        font-weight: bold;
+        color: var(--col1);
+        margin-right: auto;
+        background-color: #dddddd;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    &:last-child a{
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--col2);
+    }
+}
+.service-item p{
+    padding: 5px;
+    font-weight: bold;
+    font-size: larger;
+    margin-top: 0;
+}
+.dad_jokes{
+    width: fit-content;
+    font-size: 2em;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+}
+.dad_jokes p{
+    width: 100%;
+    text-align: center;
+}
+.joke{
+    color: transparent;
+    transition: .4s ease-in;
+}
+
+/*for webdesign page*/
+.web-title{
+    text-align: center;
+}
+.web-title-w1{
+    color:var(--w1);
+}
+.web-title-w2{
+    color:var(--w2);
+}
+.web-title-w3{
+    color:var(--w3);
+}
+.web-title-w4{
+    color:var(--w4);
+}
+.web-title-w5{
+    color:var(--w5);
+}
+.web-pages{
+    padding-left: 20px;
+    color: var(--col2);
+}
+.web-price{
+    padding-left: 20px;
+    font-size: 2em;
+}
+.web-contact{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    width: 80%;
+    border-radius: 25px;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    transition: .4s ease;
+    &:hover{
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+}
+.web-contact-w1{
+    background-color: var(--w1);
+}
+.web-contact-w2{
+    background-color: var(--w2);
+}.web-contact-w3{
+    background-color: var(--w3);
+}.web-contact-w4{
+    background-color: var(--w4);
+}.web-contact-w5{
+    background-color: var(--w5);
+}
+.service-item ul.web-ul{
+    display: block;
+    margin: 10px auto 10px auto;
+    font-weight: bold;
+    list-style-type: disc;
+    width: 90%;
+}
+.service-item ul.web-ul li{
+    padding: 5px;
+    &:nth-child(even){
+        background-color: none;
+    }
+    &:nth-child(odd){
+        background-color: white;
+    }
+}
+/*Keyframes*/
+@media(max-width:600px){
+    .line{
+        font: 1000 1.5em/1 "Oswald", sanserif;
+    }
+    .dad_jokes{
+        font-size: 1em;
+    }
+}

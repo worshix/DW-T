@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DW!Tmedia</title>
+        <link rel="stylesheet" href="./static/navbar.css" media="screen" type="text/css" />
+        <link rel="stylesheet" href="./static/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="shortcut icon" href="./static/images/dwtLogo.jpg" type="image/x-icon" />
+        <link rel="stylesheet" href="./static/index.css" />
+    </head>
+    <body>
+        <!-- navbar for the whole site -->
+        <nav class="navbar" id="navbar">
+            <a href="./index.html" class="nav-item"><img src="./static/images/dwtLogo.svg" style="width: 40px; position: relative; top: 10px; left: 5px; color: white; margin: 0; padding: 0;"/>DW!T<em>media</em></a>
+            <a href="./templates/graphic_design.html" class="nav-item hide-on-mobile">Graphic Design</a>
+            <a href="./templates/content_creation.html" class="nav-item hide-on-mobile">Content Creation</a>
+            <a href="./templates/web_design.html" class="nav-item hide-on-mobile">Web Design</a>
+            <a href="./templates/contacts.html" class="nav-item">About Us</a>
+            <a href="#" class="nav-item bi bi-menu-button-wide-fill" onclick="showSidebar('sidebar')"></a>
+        </nav>
+        <nav class="sidebar" id="sidebar">
+            <a href="#" class="bi bi-arrow-right" onclick="hideSidebar('sidebar')"></a>
+            <a href="./templates/graphic_design.html" class="side-item">Graphic Design</a>
+            <a href="./templates/content_creation.html" class="side-item">Content Creation</a>
+            <a href="./templates/web_design.html" class="side-item">Web Design</a>    
+        </nav>
+        <h1 class="line">Get your business</h1>
+        <h1 class="punch line" id="punch"><i id="0">Noticed</i></h1>
+        <h1 class="line">through our services</h1>
+        <section id="all_services" class="all_services">
+        </section>
+        <section id="dad_jokes" class="dad_jokes">
+                <p id="dad" class="dad"></p>
+                <p id="joke" class="joke"></p>
+        </section>
+        <script src="./static/navbar.js"></script>
+        <script src="./static/index.js"></script>
+    </body>
+</html>

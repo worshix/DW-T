@@ -1,0 +1,124 @@
+@import url('index.css');
+body{
+    min-height: 100vh;
+    margin: 0;
+    --col1: #107d91;
+    --col2: #6d6d6d;
+    --col3: #08d6fa;
+    --w1:var(--col2);
+    --w2:#684BFE;
+    --w3:#107D91;
+    --w4:#CD5DFB;
+    --w5:#0095D5;
+}
+.contacts{
+    width: 80%;
+    box-shadow: 0 1px 2px black;
+    margin: 30px auto 0 auto;
+    border-radius: 5px 5px 15px 15px;
+    padding: 10px;
+}
+
+.contacts ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contacts ul li{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 10px;
+    display: block;
+    transition: transform 0.0.8s ease;
+    color: gray;
+    &:active{
+        transform: scale(0.8);
+        color: blue;
+    }
+}
+.contact {
+    width: 50%;
+    box-shadow: 0 1px 2px black;
+    margin: 30px auto 0 auto;
+    border-radius: 5px 5px 15px 15px;
+    padding: 10px;
+}
+
+.contact h1{
+    color: gray;
+    text-align: center;
+}
+.contact div{
+    text-align: center;
+    font-size: 50px;
+}
+.contact .btn a{
+    font-size: 28px;
+    background-color: var(--col1);
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease;
+    &:hover{
+        background-color: #6060ff;
+    }
+}
+#contact1{
+    position: relative;
+    display: block;
+    transition: 0.8s ease;
+}
+#contact2{
+    display: none;
+    position: relative;
+    left: -100%;
+    transition: 0.8s ease;
+}
+#contact3{
+    display: none;
+    position: relative;
+    left: -100%;
+    transition: 0.8s ease;
+}
+#contact4{
+    display: none;
+    position: relative;
+    left: -100%;
+    transition: 0.8s ease;
+}
+#contact5{
+    display: none;
+    position: relative;
+    left: -100%;
+    transition: 0.8s ease;
+}
+
+.contacts-ul li:nth-child(1) a {
+    color: blue;
+} 
+
+@media (max-width: 650px) {
+    .contact h2{
+        font-size: 17px;
+    }
+}
