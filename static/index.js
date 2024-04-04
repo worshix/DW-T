@@ -205,7 +205,7 @@ services = {
         }
     ]
 }
-var punchlines = ["noticed","adored", "proffesional","elevated","exotic","amaaazing!!!", "nonsensical", "useless"];
+var punchlines = ["noticed","adored", "professional","elevated","exotic","amaaazing!!!", "exquisite", "world-class"];
 var ID = 1;
 
 try
