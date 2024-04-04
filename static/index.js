@@ -233,7 +233,7 @@ try
     for(item of services.service){
         container.innerHTML = container.innerHTML + `
             <div class="service-item">
-                <a href ="${item.link}" class="image"><img src="./../static/images/${item.image}" alt="${item.alt}"></a>
+                <a href ="${item.link}" class="image"><img src="./static/images/${item.image}" alt="${item.alt}"></a>
                 <ul>
                     <li>${item.title}</li>
                     <li><a href="./templates/contacts.html">Contact Us</a></li>

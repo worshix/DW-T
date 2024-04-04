@@ -193,9 +193,10 @@ body{
 /*Keyframes*/
 @media(max-width:600px){
     .line{
-        font: 1000 1.5em/1 "Oswald", sanserif;
+        font: 1000 1.1em/1 "Oswald", sanserif;
     }
     .dad_jokes{
         font-size: 1em;
     }
+    .
 }
