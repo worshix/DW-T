@@ -92,3 +92,40 @@ em{
         font-size: 15px;
     }
 }
+
+/* For the dad Jokes */
+
+.dad_jokes{
+    width: 100%;
+    border-color: var(--col1);
+}
+  .cube {
+    transform-style: preserve-3d;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: all .6s;
+  }
+  .side {
+    display: flex;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    width: fit-content;
+    margin :0 auto 0 auto;
+    padding : 5px;
+    border-radius: 5px;
+  }
+  .top {
+    background: var(--col1);
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+  } 
+  .front {
+    background: var(--col2);
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+}
+  

@@ -114,7 +114,7 @@ body{
 }
 
 .contacts-ul li:nth-child(1) a {
-    color: blue;
+    color: #08d6fa;
 } 
 
 @media (max-width: 650px) {

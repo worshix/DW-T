@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DW!Tmedia</title>
-        <link rel="stylesheet" href="./static/navbar.css" media="screen" type="text/css" />
-        <link rel="stylesheet" href="./static/bootstrap-icons/font/bootstrap-icons.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
         <link rel="shortcut icon" href="./static/images/dwtLogo.jpg" type="image/x-icon" />
         <link rel="stylesheet" href="./static/index.css" />
+        <link rel="stylesheet" href="./static/navbar.css" media="screen" type="text/css" />
     </head>
     <body>
         <!-- navbar for the whole site -->
         <nav class="navbar" id="navbar">
-            <a href="./index.html" class="nav-item"><img src="./static/images/dwtLogo.svg" style="width: 40px; position: relative; top: 10px; left: 5px; color: white; margin: 0; padding: 0;"/>DW!T<em>media</em></a>
+            <a href="./index.html" class="nav-item"><img src="./static/images/dwtLogo.svg" style="width: 25px; position: relative; top: 5px; left: 5px; color: white; margin: 0; padding: 0;"/>DW!T<em>media</em></a>
             <a href="./templates/graphic_design.html" class="nav-item hide-on-mobile">Graphic Design</a>
             <a href="./templates/content_creation.html" class="nav-item hide-on-mobile">Content Creation</a>
             <a href="./templates/web_design.html" class="nav-item hide-on-mobile">Web Design</a>
@@ -31,8 +31,10 @@
         <section id="all_services" class="all_services">
         </section>
         <section id="dad_jokes" class="dad_jokes">
-                <p id="dad" class="dad"></p>
-                <p id="joke" class="joke"></p>
+            <div class="cube" id="cube">
+                <span id="dad" class="side front"></span>
+                <span id="joke" class="side top"></span>
+            </div>
         </section>
         <script src="./static/navbar.js"></script>
         <script src="./static/index.js"></script>

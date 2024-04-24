@@ -8,7 +8,7 @@ function getContact(idnumber){
     for(i of all_item){
         i.style.color = "gray";
     }
-    document.querySelector(`#a${idnumber}`).style.color = "blue";
+    document.querySelector(`#a${idnumber}`).style.color = "#08d6fa";
     item = document.getElementById(`contact${idnumber}`);
     item.style.display = "block";
     setTimeout(()=>{item.style.left = "0"}, 1)

@@ -23,7 +23,7 @@ services = {
         {
             "id":"g1",
             "title":"Flyers",
-            "image":"flyer1.png",
+            "image":"flyer2.jpg",
             "description":"Digital and hard-copy flyers",
             "printing":" and printing of A4, A5 and A6 flyers",
             "price":"",
@@ -205,7 +205,187 @@ services = {
         }
     ]
 }
-var punchlines = ["noticed","adored", "professional","elevated","exotic","amaaazing!!!", "exquisite", "world-class"];
+
+dadjokes = {
+    "dad_jokes":[
+        {
+            "id":"dj1",
+            "dad":"I'm afraid for the calendar.",
+            "joke":"Its days are numbered."
+        },
+        {
+            "id":"dj2",
+            "dad":"My wife said I should do lunges to stay in shape",
+            "joke":"That would be a big step forward."
+        },
+        {
+            "id":"dj3",
+            "dad":"Why do fathers take an extra pair of socks when they go golfing?",
+            "joke":"In case they get a hole in one!"
+        },
+        {
+            "id":"dj4",
+            "dad":"Singing in the shower is fun until you get soap in your mouth.",
+            "joke":"Then it's a soap opera."
+        },
+        {
+            "id":"dj5",
+            "dad":"What do a tick and the Eiffel Tower have in common?",
+            "joke":"They're both Paris sites."
+        },
+        {
+            "id":"dj6",
+            "dad":"What do you call a fish wearing a bowtie?",
+            "joke":"Sofishticated"
+        },
+        {
+            "id":"dj7",
+            "dad":"How do you follow Will Smith in the snow?",
+            "joke":"You follow the fresh prints."
+        },
+        {
+            "id":"dj8",
+            "dad":"I thought the dryer was shrinking my clothes.",
+            "joke":"Turns out it was the refrigerator all along."
+        },
+        {
+            "id":"dj9",
+            "dad":"What do you call a factory that makes okay products?",
+            "joke":"Satisfactory"
+        },
+        {
+            "id":"dj10",
+            "dad":"Dear Math,",
+            "joke":"grow up and solve your own problems."
+        },
+        {
+            "id":"dj11",
+            "dad":"What did the janitor say when he jumped out of the closet?",
+            "joke":"Supplies!!!"
+        },
+        {
+            "id":"dj12",
+            "dad":"What did the ocean say to the beach?",
+            "joke":"Nothing, it just waved."
+        },
+        {
+            "id":"dj13",
+            "dad":"Why do seagulls fly over the ocean?",
+            "joke":"Because if they flew over the bay, we'd call them bagels."
+        },
+        {
+            "id":"dj14",
+            "dad":"I only know 25 letters of the alphabet.",
+            "joke":"I don't know 'y'"
+        },
+        {
+            "id":"dj15",
+            "dad":"How does the moon cut his hair?",
+            "joke":"Eclipse it."
+        },
+        {
+            "id":"dj16",
+            "dad":"What did one wall say to the other?",
+            "joke":"I'll meet you at the corner."
+        },
+        {
+            "id":"dj17",
+            "dad":"A skeleton walks into a bar and says,",
+            "joke":"Hey, bartender. I'll have one beer and a mop."
+        },
+        {
+            "id":"dj18",
+            "dad":"I asked my dog what's two minus two.",
+            "joke":"He said nothing"
+        },
+        {
+            "id":"dj19",
+            "dad":"What did Baby Corn say to Mama Corn?",
+            "joke":"Where's Pop Corn?"
+        },
+        {
+            "id":"dj20",
+            "dad":"What does a sprinter eat before a race?",
+            "joke":"Nothing, they fast!"
+        },
+        {
+            "id":"dj21",
+            "dad":"I used to be addicted to soap,",
+            "joke":"but I'm clean now."
+        },
+        {
+            "id":"dj22",
+            "dad":"When two vegans get in an argument,",
+            "joke":"is it still called a beef?"
+        },
+        {
+            "id":"dj23",
+            "dad":"Do you wanna box for your leftovers?",
+            "joke":"No, but I'll wrestle you for them."
+        },
+        {
+            "id":"dj24",
+            "dad":"Did you hear about the kidnapping at the park?",
+            "joke":"They woke up."
+        },
+        {
+            "id":"dj25",
+            "dad":"I used to play piano by ear",
+            "joke":"but now I use my hands."
+        },
+        {
+            "id":"dj26",
+            "dad":"I told my wife she should embrace her mistakes.",
+            "joke":"She gave me a hug."
+        },
+        {
+            "id":"dj27",
+            "dad":"What do you call cheese that isn't yours?",
+            "joke":"Nacho Cheese"
+        },
+        {
+            "id":"dj28",
+            "dad":"Why couldn't the bicycle stand up by itself?",
+            "joke":"It was two tired"
+        },
+        {
+            "id":"dj29",
+            "dad":"I told my wife she should embrace her mistakes.",
+            "joke":"She gave me a hug."
+        },
+        {
+            "id":"dj30",
+            "dad":"What do you get from a pampered cow?",
+            "joke":"Spoiled Milk"
+        },
+        {
+            "id":"dj31",
+            "dad":"I don't trust stairs",
+            "joke":"they're always up to something."
+        },
+        {
+            "id":"dj32",
+            "dad":"Why don't skeletons fight each other?",
+            "joke":"They don't have the guts."
+        },
+        {
+            "id":"dj33",
+            "dad":"What do you call an elephant that doesn't matter?",
+            "joke":"An irrelephant."
+        },
+        {
+            "id":"dj34",
+            "dad":"I told my wife she should embrace her mistakes.",
+            "joke":"She gave me a hug."
+        },
+        {
+            "id":"dj35",
+            "dad":"Why don't eggs tell jokes?",
+            "joke":"They'd crack each other up"
+        }
+    ]
+}
+var punchlines = ["noticed","adored", "proffesional","elevated","exotic","recognised","promoted"];
 var ID = 1;
 
 try
@@ -247,20 +427,26 @@ try
 
 // rendering dad jokes
 try{
+    let cube = document.getElementById('cube');
     let dad_container = document.getElementById('dad');
     let joke_container = document.getElementById('joke');
+    let data = dadjokes.dad_jokes
     dad_container.innerHTML = `${data[0].dad}`;
-    joke_container.innerHTML = `${data[0].joke}`
+    joke_container.innerHTML = `${data[0].joke}`;
+    setTimeout(() => {
+        cube.style.transform = 'rotateX(90deg)';
+        },5000);
     setInterval(()=>{
-        joke_container.style.color = "transparent";
+        cube.style.transform = 'rotateX(0deg)';
         var i = Math.floor(Math.random()*data.length);
         dad_container.innerHTML = `${data[i].dad}`;
         joke_container.innerHTML = `${data[i].joke}`;
-        setTimeout(()=>{joke_container.style.color = "black";},5000);
+        setTimeout(() => {
+        cube.style.transform = 'rotateX(90deg)';
+        },5000);
     },10000);
-}
-catch{
-    console.log("problem");
+}catch{
+    console.log("dad_joke error in getting elements")
 }
 
 //rendering graphic design stuff
@@ -301,7 +487,6 @@ try
 }catch{
     console.log("pakashata");
 }
-
 //rendering web_design stuff
 try{
     let wd_container = document.getElementById('web_design');
